@@ -8,11 +8,11 @@ bouton.style.color = 'red'
 bouton.addEventListener('click', (e) => {
     e.preventDefault();
 
-    let tabValue = ["0","1","2","3","4","5","6","7","8","9","a","b","c","d","e","f"]
+    let strValue = "0123456789abcdef"
     let couleurs = "#";
 
     for(let i = 0; i < 6; i++){
-        couleurs += tabValue[(Math.trunc(Math.random(0,1) *10 +6))]
+        couleurs += strValue[(Math.trunc(Math.random(0,1) *strValue.length))]
     }
 
     body.style.background = couleurs;

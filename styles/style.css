@@ -1,0 +1,64 @@
+*, ::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.btn-accueil{
+    width: 65px;
+    height: 65px;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 0 0 rgb(0, 0, 0);
+    animation: pulse 1.3s infinite;
+    z-index: 100;
+
+}
+
+@keyframes pulse {
+    to
+    {
+        box-shadow: 0 0 0 15px rgba(255, 255, 255, 0.01);
+    }
+}
+
+
+.btn-accueil .accueil{
+    width: 100%;
+    height: 100%;
+    padding: 0 5px;
+    text-decoration: none;
+    color: #000000;
+    text-align: center;
+    line-height: 65px;
+}
+
+
+.btn{
+    padding: 20px 40px;
+    font-size: 2rem;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+}
+
+.btn:hover{
+    background: #383838;
+}
+
+.valeur{
+    font-size: 2rem;
+    margin: 30px;
+}
